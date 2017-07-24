@@ -32,8 +32,6 @@ function strokeWeight(x) { }
 
 function ellipse(x, y, r, startAngle, endAngle)
 {
-    //var c = document.getElementById("myCanvas");
-    //var ctx = c.getContext("2d");
     ctx.beginPath();
     ctx.arc(x, y, r, startAngle, endAngle);
     ctx.stroke();
@@ -41,8 +39,6 @@ function ellipse(x, y, r, startAngle, endAngle)
 
 function line(x1, y1, x2, y2)
 {
-    //var c = document.getElementById("myCanvas");
-    //var ctx = c.getContext("2d");
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
     ctx.stroke();
@@ -53,9 +49,15 @@ function point(x, y)
 
 }
 
-function sin(angle) { return Math.sin(rads(angle)).toFixed(8); } // using degrees rather than radians
+function sin(angle) // using degrees rather than radians
+{
+    return Math.sin(rads(angle)).toFixed(8);
+} 
 
-function cos(angle) { return Math.cos(rads(angle)).toFixed(8); } // using degrees rather than radians
+function cos(angle) // using degrees rather than radians
+{
+    return Math.cos(rads(angle)).toFixed(8);
+} 
 
 function text(str, x, y)
 {
