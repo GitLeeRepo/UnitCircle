@@ -12,15 +12,15 @@ document.getElementById("myCanvas").onclick = function (event) {
     var increment = parseInt(document.getElementsByName("increment")[0].value);
     document.getElementsByName("angle")[0].value = angle + increment;
     DisplayUnitCircle();
-}
+};
 
 document.getElementById("angle").onchange = function (event) {
     DisplayUnitCircle();
-}
+};
 
 document.getElementById("angle").onblur = function (event) {
     DisplayUnitCircle();
-}
+};
 
 
 // functions (some stub) used in khan environment but not native to js
